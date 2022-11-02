@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slothify</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="main" class="container-fluid">
+      <div class="row mb-3">
+        <div id="navbar">
+          <nav
+            id="navbar1"
+            class="navbar navbar-expand-lg navbar-light bg-dark"
+          >
+            <a class="navbar-brand text-white" href="#">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse"
+              id="navbar2"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mr-auto text-white" id="navbar3">
+                <li class="nav-item active text-white">
+                  <a class="nav-link text-white" href="#"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item text-white">
+                  <a class="nav-link text-white" href="#fav"
+                    >Favourite Albums</a
+                  >
+                </li>
+                <li class="nav-item text-white">
+                  <a class="nav-link text-white" href="#hall">Hall of Shame</a>
+                </li>
+                <li class="nav-item text-white">
+                  <a class="nav-link text-white" href="#best"
+                    >Best Group Ever</a
+                  >
+                </li>
+                <li class="nav-item text-white">
+                  <a class="nav-link text-white" href="#mix">Mix of the Day</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div id="page" class="col-9">
+          <h1>
+            Welcome to Slothify
+            <img
+              id="sloth"
+              src="https://www.rainforest-alliance.org/wp-content/uploads/2021/06/three-toed-sloth-teaser-1.jpg.optimal.jpg"
+            />
+          </h1>
+          <div>
+            <h2><a id="fav"></a>Favourite Albums</h2>
+            <div class="row mb-3">
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                <div class="card text-white bg-dark" style="width: 15rem">
+                  <img
+                    src="https://www.udiscovermusic.com/wp-content/uploads/2017/08/Pink-Floyd-Dark-Side-Of-The-Moon.jpg"
+                    class="card-img-top"
+                    alt="Pink Floyd"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pink Floyd</h5>
+                    <h6>The Dark Side Of The Moon (1973)</h6>
+                    <p class="card-text">
+                      The triumvirate of light beam, prism and spectrum
+                      apparently stood for three aspects of the...
+                    </p>
+                    <a
+                      href="https://open.spotify.com/album/2WT1pbYjLJciAR26yMebkH?si=617cdef545bc4b02"
+                      class="btn btn-primary"
+                      >Listen on Slothify</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                <div class="card text-white bg-dark" style="width: 15rem">
+                  <img
+                    src="https://www.udiscovermusic.com/wp-content/uploads/2017/08/Nirvana-Nevermind.jpg"
+                    class="card-img-top"
+                    alt="Nirvana"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Nirvana</h5>
+                    <h6>Nevermind (1991)</h6>
+                    <p class="card-text">
+                      Nevermind and its singles' success propelled Nirvana to
+                      being widely regarded as the biggest band in the...
+                    </p>
+                    <a
+                      href="https://open.spotify.com/album/2UJcKiJxNryhL050F5Z1Fk?si=22f755e090aa48b5"
+                      class="btn btn-primary"
+                      >Listen on Slothify</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                <div class="card text-white bg-dark" style="width: 15rem">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/Rammstein_-_Zeit.png/220px-Rammstein_-_Zeit.png"
+                    class="card-img-top"
+                    alt="Rammstein"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Rammstein</h5>
+                    <h6>Zeit (2022)</h6>
+                    <p class="card-text">
+                      Zeit (English: Time) is the eighth studio album by German
+                      Neue Deutsche Härte band Rammstein
+                    </p>
+                    <a
+                      href="https://open.spotify.com/album/75OE7M0wduJyffbffehHuR?si=5efc2ba944a1454d"
+                      class="btn btn-primary"
+                      >Listen on Slothify</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                <div class="card text-white bg-dark" style="width: 15rem">
+                  <img
+                    src="https://assets-global.website-files.com/5e6a544cadf84b1393e2e022/611cfe742b143f7da5d234dc_51SUWsbmnHL._SX466_%20(1).jpg"
+                    class="card-img-top"
+                    alt="Led Zeppelin"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Led Zeppelin</h5>
+                    <h6>Led Zeppelin (1969)</h6>
+                    <p class="card-text">
+                      Led Zeppelin showed the group's fusion of blues and rock,
+                      and their take on the emerging hard rock sound
+                    </p>
+                    <a
+                      href="https://open.spotify.com/album/3ycjBixZf7S3WpC5WZhhUK?si=825f5c3af4a842e8"
+                      class="btn btn-primary"
+                      >Listen on Slothify</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                <div class="card text-white bg-dark" style="width: 15rem">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Evanescence_-_Fallen.png/220px-Evanescence_-_Fallen.png"
+                    class="card-img-top"
+                    alt="Evanescence"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Evanescence</h5>
+                    <h6>Fallen (2003)</h6>
+                    <p class="card-text">
+                      Fallen is the band's most commercially successful album to
+                      date, selling over 8 million copies in the US
+                    </p>
+                    <a
+                      href="https://open.spotify.com/album/02w1xMzzdF2OJxTeh1basm?si=6ab2384bf3cd4ee9"
+                      class="btn btn-primary"
+                      >Listen on Slothify</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                <div class="card text-white bg-dark" style="width: 15rem">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/6/64/SystemofaDownToxicityalbumcover.jpg/220px-SystemofaDownToxicityalbumcover.jpg"
+                    class="card-img-top"
+                    alt="SOAD"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">System of a Down</h5>
+                    <h6>Toxicity (2001)</h6>
+                    <p class="card-text">
+                      Toxicity is the second studio album by Armenian-American
+                      heavy metal band System of a Down,
+                    </p>
+                    <a
+                      href="https://open.spotify.com/album/6jWde94ln40epKIQCd8XUh?si=e171020c3c67444a"
+                      class="btn btn-primary"
+                      >Listen on Slothify</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                <div class="card text-white bg-dark" style="width: 15rem">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/6/60/GunsnRosesAppetiteforDestructionalbumcover.jpg/220px-GunsnRosesAppetiteforDestructionalbumcover.jpg"
+                    class="card-img-top"
+                    alt="Guns N Roses"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Guns N Roses</h5>
+                    <h6>Appetite for Destruction (1987)</h6>
+                    <p class="card-text">
+                      Appetite for Destruction is the debut studio album by
+                      American hard rock band Guns N' Roses.
+                    </p>
+                    <a
+                      href="https://open.spotify.com/album/3I9Z1nDCL4E0cP62flcbI5?si=8bc1b9dc76aa4b25"
+                      class="btn btn-primary"
+                      >Listen on Slothify</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                <div class="card text-white bg-dark" style="width: 15rem">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Metallica_-_Master_of_Puppets_cover.jpg/220px-Metallica_-_Master_of_Puppets_cover.jpg"
+                    class="card-img-top"
+                    alt="Metallica"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Metallica</h5>
+                    <h6>Master of Puppets (1986)</h6>
+                    <p class="card-text">
+                      Master of Puppets is the third studio album by the
+                      American heavy metal band Metallica
+                    </p>
+                    <a
+                      href="https://open.spotify.com/album/2Lq2qX3hYhiuPckC8Flj21?si=5412132b258743e1"
+                      class="btn btn-primary"
+                      >Listen on Slothify</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h2><a id="best"></a>Best Group Ever</h2>
+              <div class="row md-3">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                  <div class="card text-white bg-dark" style="width: 15rem">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Linkin_Park_Hybrid_Theory_Album_Cover.jpg/220px-Linkin_Park_Hybrid_Theory_Album_Cover.jpg"
+                      class="card-img-top"
+                      alt="LP HT"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Linkin Park</h5>
+                      <h6>Hybrid Theory (2000)</h6>
+                      <p class="card-text">
+                        Hybrid Theory is the debut studio album by American rock
+                        band Linkin Park, released on October 24, 2000
+                      </p>
+                      <a
+                        href="https://open.spotify.com/album/6PFPjumGRpZnBzqnDci6qJ?si=7e8300977000450e"
+                        class="btn btn-primary"
+                        >Listen on Slothify</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                  <div class="card text-white bg-dark" style="width: 15rem">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Linkin_Park_Meteora_Album_Cover.jpg/220px-Linkin_Park_Meteora_Album_Cover.jpg"
+                      class="card-img-top"
+                      alt="LP MT"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Linkin Park</h5>
+                      <h6>Meteora (2003)</h6>
+                      <p class="card-text">
+                        Meteora is the second studio album by American rock band
+                        Linkin Park
+                      </p>
+                      <a
+                        href="https://open.spotify.com/album/4Gfnly5CzMJQqkUFfoHaP3?si=f3c8a05ad18d4c03"
+                        class="btn btn-primary"
+                        >Listen on Slothify</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                  <div class="card text-white bg-dark" style="width: 15rem">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Minutes_to_Midnight_cover.jpg/220px-Minutes_to_Midnight_cover.jpg"
+                      class="card-img-top"
+                      alt="LP MtM"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Linkin Park</h5>
+                      <h6>Minutes to Midnight (2007)</h6>
+                      <p class="card-text">
+                        Minutes to Midnight is the third studio album by
+                        American rock band Linkin Park
+                      </p>
+                      <a
+                        href="https://open.spotify.com/album/2tlTBLz2w52rpGCLBGyGw6?si=794cc044ca004efe"
+                        class="btn btn-primary"
+                        >Listen on Slothify</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                  <div class="card text-white bg-dark" style="width: 15rem">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Linkin_park_reanimation.jpg/220px-Linkin_park_reanimation.jpg"
+                      class="card-img-top"
+                      alt="LP RM"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Linkin Park</h5>
+                      <h6>Reanimation (2002)</h6>
+                      <p class="card-text">
+                        Reanimation (typeset as [REAИIMATIOИ]) is the first
+                        remix album by American rock band Linkin Park
+                      </p>
+                      <a
+                        href="https://open.spotify.com/album/2NbO8RRVTVEUjHaxUVdMDT?si=7c46d30982ea4e5e"
+                        class="btn btn-primary"
+                        >Listen on Slothify</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+            <h2><a id="hall"></a>Hall of Shame</h2>
+            <div class="row mb-3">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                    <div class="card text-white bg-dark" style="width: 15rem">
+                      <img
+                        src="https://cdn2.albumoftheyear.org/375x/album/175574-ghostories.jpg"
+                        class="card-img-top"
+                        alt="sh1"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Tom MacDonald</h5>
+                        <h6>Ghostories (2019)</h6>
+                        <p class="card-text">
+                            Tom MacDonald Is Offended About Offending Everybody; The Album.
+                        </p>
+                        <a
+                          href="https://www.albumoftheyear.org/album/175574-tom-macdonald-ghostories.php"
+                          class="btn btn-primary"
+                          >Discover More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                    <div class="card text-white bg-dark" style="width: 15rem">
+                      <img
+                        src="https://cdn2.albumoftheyear.org/375x/album/109256-playdough-cooked-in-tea.jpg"
+                        class="card-img-top"
+                        alt="sh2"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Me&me</h5>
+                        <h6>Playdough Cooked in Tea (2017)</h6>
+                        <p class="card-text">
+                            I haven't heard it, but I can already tell it was made by an immature teen
+                        </p>
+                        <a
+                          href="https://www.albumoftheyear.org/album/109256-meme-playdough-cooked-in-tea.php"
+                          class="btn btn-primary"
+                          >Discover More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                    <div class="card text-white bg-dark" style="width: 15rem">
+                      <img
+                        src="https://cdn2.albumoftheyear.org/375x/album/19541-lets-start-a-riot.jpg"
+                        class="card-img-top"
+                        alt="sh3"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Blood On The Dance Floor</h5>
+                        <h6>Let's Start a Riot (2008)</h6>
+                        <p class="card-text">
+                            BOTD - busic that you turn off. you listen to about a second and you actually just turn it off
+                        </p>
+                        <a
+                          href="https://www.albumoftheyear.org/album/19541-blood-on-the-dance-floor-lets-start-a-riot.php"
+                          class="btn btn-primary"
+                          >Discover More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                    <div class="card text-white bg-dark" style="width: 15rem">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Linkin_park_reanimation.jpg/220px-Linkin_park_reanimation.jpg"
+                        class="card-img-top"
+                        alt="LP RM"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Ronnie Radke</h5>
+                        <h6>Watch Me (2013)</h6>
+                        <p class="card-text">
+                            One of the worst mixtapes I have ever heard in my life
+                        </p>
+                        <a
+                          href="https://www.albumoftheyear.org/album/448013-ronnie-radke-watch-me.php"
+                          class="btn btn-primary"
+                          >Discover More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+          <div id="mixday">
+            <h2><a id="mix"></a>Mix of the Day</h2>
+            <div class="row">
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/5512598b11b2f584e67a6f422f8057f5/10377954/nick-drake-pink-moon-cover-art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/e198352046897b40ab4bb8a1e262e451/9700507/gary-wilson-you-think-you-really-know-me-cover-art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/988409e7e8d00981592c3873066a5b4a/10181472/glenn-branca-the-ascension-Cover-Art.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/a8b7b3aa5d8f110bb9f7ebf1d8dd5e24/2505909/phish-rift-Cover-Art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/6b2ac10a59ccbb64c8e9094614df18d5/8060277/frank-ocean-channel-orange-Cover-Art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/b95e4b4325ce299ef3fc72cf7f71a0c5/9687885/miles-davis-in-a-silent-way-Cover-Art.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/37016daa708433c0b788465e97fd2cd4/5867629/kauan-sorni-nai-cover-art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/52bc3bdda8e56199098feb4ac9f5bb7a/2082872/angels-of-light-we-are-him-Cover-Art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/be892b40e082b8ae9134ed44a190268a/1884639/robert-ashley-automatic-writing-Cover-Art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/61eb7ec2d1dc42253eec6571e4ccefb5/1893277/kraftwerk-autobahn-Cover-Art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/730e29edcd605442ef8dc4842692eba7/6118638/radiohead-a-moon-shaped-pool-Cover-Art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/13d4093adbca98a2cf3910e0f9af8e28/5465104/deerhunter-halcyon-digest-cover-art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/4211206a959256decbf4b5f1c025446c/5029430/pink-floyd-a-saucerful-of-secrets-Cover-Art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/335b20444242f0faf07dfa2623e02acd/6431114/bill-evans-and-jim-hall-undercurrent-Cover-Art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/34923ea08f95da21fff69062249f147d/2259766/miles-davis-bitches-brew-Cover-Art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/5512598b11b2f584e67a6f422f8057f5/10377954/nick-drake-pink-moon-cover-art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/e198352046897b40ab4bb8a1e262e451/9700507/gary-wilson-you-think-you-really-know-me-cover-art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/988409e7e8d00981592c3873066a5b4a/10181472/glenn-branca-the-ascension-Cover-Art.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/a8b7b3aa5d8f110bb9f7ebf1d8dd5e24/2505909/phish-rift-Cover-Art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/6b2ac10a59ccbb64c8e9094614df18d5/8060277/frank-ocean-channel-orange-Cover-Art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/b95e4b4325ce299ef3fc72cf7f71a0c5/9687885/miles-davis-in-a-silent-way-Cover-Art.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/37016daa708433c0b788465e97fd2cd4/5867629/kauan-sorni-nai-cover-art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/52bc3bdda8e56199098feb4ac9f5bb7a/2082872/angels-of-light-we-are-him-Cover-Art.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <img
+                  src="https://e.snmc.io/i/600/w/be892b40e082b8ae9134ed44a190268a/1884639/robert-ashley-automatic-writing-Cover-Art.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-white bg-dark">
+      <ul>
+        <li>Some Information</li>
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+        <li></li>
+      </ul>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let number = document.querySelectorAll(".card");
+      let counter = document.querySelector("footer ul li:last-child");
+      let pics = document.querySelectorAll("#mixday div");
+      counter.innerText =
+        "Total Number of Albums on Slothify: " + (number.length + pics.length);
+    </script>
+  </body>
+</html>
