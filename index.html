@@ -15,13 +15,17 @@
   </head>
   <body>
     <div id="main" class="container-fluid">
-      <div class="row mb-3">
+      <div class="row">
+        <div class="col-xl-2 col-lg-2 col-sm-0" id="navdiv">
         <div id="navbar">
           <nav
             id="navbar1"
-            class="navbar navbar-expand-lg navbar-light bg-dark"
+            class="navbar navbar-expand navbar-light bg-dark"
           >
-            <a class="navbar-brand text-white" href="#">Navbar</a>
+            <a class="navbar-brand text-white" href="#">Slothify  <img
+                id="slothnav"
+                src="https://www.rainforest-alliance.org/wp-content/uploads/2021/06/three-toed-sloth-teaser-1.jpg.optimal.jpg"
+              /></a>
             <button
               class="navbar-toggler"
               type="button"
@@ -63,21 +67,114 @@
                 </li>
               </ul>
             </div>
-          </nav>
+          </nav></div>
         </div>
         <div id="page" class="col-9">
-          <h1>
+         <div class="col-lg-9 col-12"> <h1>
             Welcome to Slothify
             <img
               id="sloth"
               src="https://www.rainforest-alliance.org/wp-content/uploads/2021/06/three-toed-sloth-teaser-1.jpg.optimal.jpg"
             />
-          </h1>
+          </h1></div>
+          <div id="albumday" class="row mb-5">
+            <div id="leftside" class="col-xl-7 col-lg-6 col-md-5 col-sm 4 col-12"> <h2 id="coverday" class="col-9">Album <br>of the day</h2></div>
+            <div class="col-xl-5 col-lg-6 col-md-7 col-sm-8 col-12 mt-md-0 mt-3">
+                <h3>No Need to Argue</h3>
+                <h4>The Cranberries</h4>
+                <h4>Duration: <b>50:30</b></h4>
+                <h4>Genre: Alternative Rock</h4>
+                <div class="media d-flex" id="media">
+                    <h5 class="align-self-center">The Cranberries - Zombie</h5>
+                    <audio controls src="/assets/zombie.mp3"></audio>
+                </div>
+                <button class="btn btn-dark mb-2" type="button" id="showButton">Show all songs</button>
+
+                <table class="table table-striped table-dark table-hover table-sm hidden"  id="songlist">
+                    <caption>"No Need To Argue" Album Songs</caption>
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>«Ode to My Family»</td>
+                            <td>4:30</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>«I Can't Be with You»</td>
+                            <td>3:07</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>«Twenty One»</td>
+                            <td>3:07</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>«Zombie»</td>
+                            <td>5:06</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>«Empty»</td>
+                            <td>3:26</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>«Everything I Said»</td>
+                            <td>3:52</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>«The Icicle Melts»</td>
+                            <td>2:54</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>«Disappointment»</td>
+                            <td>4:14</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>«Ridiculous Thoughts»</td>
+                            <td>4:31</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>«Dreaming My Dreams»</td>
+                            <td>3:37</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>«Yeats' Grave»</td>
+                            <td>2:59</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>«Daffodil Lament»</td>
+                            <td>6:14</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>«No Need to Argue»</td>
+                            <td>2:54</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+          </div>
           <div>
             <h2><a id="fav"></a>Favourite Albums</h2>
             <div class="row mb-3">
               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
-                <div class="card text-white bg-dark" style="width: 15rem">
+                <div class="card text-white bg-dark">
                   <img
                     src="https://www.udiscovermusic.com/wp-content/uploads/2017/08/Pink-Floyd-Dark-Side-Of-The-Moon.jpg"
                     class="card-img-top"
@@ -99,7 +196,7 @@
                 </div>
               </div>
               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
-                <div class="card text-white bg-dark" style="width: 15rem">
+                <div class="card text-white bg-dark">
                   <img
                     src="https://www.udiscovermusic.com/wp-content/uploads/2017/08/Nirvana-Nevermind.jpg"
                     class="card-img-top"
@@ -121,7 +218,7 @@
                 </div>
               </div>
               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
-                <div class="card text-white bg-dark" style="width: 15rem">
+                <div class="card text-white bg-dark">
                   <img
                     src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/Rammstein_-_Zeit.png/220px-Rammstein_-_Zeit.png"
                     class="card-img-top"
@@ -143,7 +240,7 @@
                 </div>
               </div>
               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
-                <div class="card text-white bg-dark" style="width: 15rem">
+                <div class="card text-white bg-dark">
                   <img
                     src="https://assets-global.website-files.com/5e6a544cadf84b1393e2e022/611cfe742b143f7da5d234dc_51SUWsbmnHL._SX466_%20(1).jpg"
                     class="card-img-top"
@@ -165,7 +262,7 @@
                 </div>
               </div>
               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
-                <div class="card text-white bg-dark" style="width: 15rem">
+                <div class="card text-white bg-dark">
                   <img
                     src="https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Evanescence_-_Fallen.png/220px-Evanescence_-_Fallen.png"
                     class="card-img-top"
@@ -187,7 +284,7 @@
                 </div>
               </div>
               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
-                <div class="card text-white bg-dark" style="width: 15rem">
+                <div class="card text-white bg-dark">
                   <img
                     src="https://upload.wikimedia.org/wikipedia/en/thumb/6/64/SystemofaDownToxicityalbumcover.jpg/220px-SystemofaDownToxicityalbumcover.jpg"
                     class="card-img-top"
@@ -209,7 +306,7 @@
                 </div>
               </div>
               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
-                <div class="card text-white bg-dark" style="width: 15rem">
+                <div class="card text-white bg-dark">
                   <img
                     src="https://upload.wikimedia.org/wikipedia/en/thumb/6/60/GunsnRosesAppetiteforDestructionalbumcover.jpg/220px-GunsnRosesAppetiteforDestructionalbumcover.jpg"
                     class="card-img-top"
@@ -231,7 +328,7 @@
                 </div>
               </div>
               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
-                <div class="card text-white bg-dark" style="width: 15rem">
+                <div class="card text-white bg-dark">
                   <img
                     src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Metallica_-_Master_of_Puppets_cover.jpg/220px-Metallica_-_Master_of_Puppets_cover.jpg"
                     class="card-img-top"
@@ -259,7 +356,7 @@
               <h2><a id="best"></a>Best Group Ever</h2>
               <div class="row md-3">
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
-                  <div class="card text-white bg-dark" style="width: 15rem">
+                  <div class="card text-white bg-dark">
                     <img
                       src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Linkin_Park_Hybrid_Theory_Album_Cover.jpg/220px-Linkin_Park_Hybrid_Theory_Album_Cover.jpg"
                       class="card-img-top"
@@ -281,7 +378,7 @@
                   </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
-                  <div class="card text-white bg-dark" style="width: 15rem">
+                  <div class="card text-white bg-dark">
                     <img
                       src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Linkin_Park_Meteora_Album_Cover.jpg/220px-Linkin_Park_Meteora_Album_Cover.jpg"
                       class="card-img-top"
@@ -303,7 +400,7 @@
                   </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
-                  <div class="card text-white bg-dark" style="width: 15rem">
+                  <div class="card text-white bg-dark">
                     <img
                       src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Minutes_to_Midnight_cover.jpg/220px-Minutes_to_Midnight_cover.jpg"
                       class="card-img-top"
@@ -325,7 +422,7 @@
                   </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
-                  <div class="card text-white bg-dark" style="width: 15rem">
+                  <div class="card text-white bg-dark">
                     <img
                       src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Linkin_park_reanimation.jpg/220px-Linkin_park_reanimation.jpg"
                       class="card-img-top"
@@ -352,7 +449,7 @@
             <h2><a id="hall"></a>Hall of Shame</h2>
             <div class="row mb-3">
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
-                    <div class="card text-white bg-dark" style="width: 15rem">
+                    <div class="card text-white bg-dark">
                       <img
                         src="https://cdn2.albumoftheyear.org/375x/album/175574-ghostories.jpg"
                         class="card-img-top"
@@ -373,7 +470,7 @@
                     </div>
                   </div>
                   <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
-                    <div class="card text-white bg-dark" style="width: 15rem">
+                    <div class="card text-white bg-dark">
                       <img
                         src="https://cdn2.albumoftheyear.org/375x/album/109256-playdough-cooked-in-tea.jpg"
                         class="card-img-top"
@@ -394,7 +491,7 @@
                     </div>
                   </div>
                   <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
-                    <div class="card text-white bg-dark" style="width: 15rem">
+                    <div class="card text-white bg-dark">
                       <img
                         src="https://cdn2.albumoftheyear.org/375x/album/19541-lets-start-a-riot.jpg"
                         class="card-img-top"
@@ -415,9 +512,9 @@
                     </div>
                   </div>
                   <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
-                    <div class="card text-white bg-dark" style="width: 15rem">
+                    <div class="card text-white bg-dark">
                       <img
-                        src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Linkin_park_reanimation.jpg/220px-Linkin_park_reanimation.jpg"
+                        src="https://e.snmc.io/i/600/s/b2b0a354721c5b8ebcd2dbe1504b7e38/6147051/ronnie-radke-watch-me-Cover-Art.jpg"
                         class="card-img-top"
                         alt="LP RM"
                       />
@@ -440,148 +537,166 @@
 
           <div id="mixday">
             <h2><a id="mix"></a>Mix of the Day</h2>
-            <div class="row">
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+            <div class="row no-gutters justify-content-center mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/5512598b11b2f584e67a6f422f8057f5/10377954/nick-drake-pink-moon-cover-art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/e198352046897b40ab4bb8a1e262e451/9700507/gary-wilson-you-think-you-really-know-me-cover-art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/988409e7e8d00981592c3873066a5b4a/10181472/glenn-branca-the-ascension-Cover-Art.png"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/a8b7b3aa5d8f110bb9f7ebf1d8dd5e24/2505909/phish-rift-Cover-Art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/6b2ac10a59ccbb64c8e9094614df18d5/8060277/frank-ocean-channel-orange-Cover-Art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/b95e4b4325ce299ef3fc72cf7f71a0c5/9687885/miles-davis-in-a-silent-way-Cover-Art.png"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/37016daa708433c0b788465e97fd2cd4/5867629/kauan-sorni-nai-cover-art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/52bc3bdda8e56199098feb4ac9f5bb7a/2082872/angels-of-light-we-are-him-Cover-Art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/be892b40e082b8ae9134ed44a190268a/1884639/robert-ashley-automatic-writing-Cover-Art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/61eb7ec2d1dc42253eec6571e4ccefb5/1893277/kraftwerk-autobahn-Cover-Art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/730e29edcd605442ef8dc4842692eba7/6118638/radiohead-a-moon-shaped-pool-Cover-Art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/13d4093adbca98a2cf3910e0f9af8e28/5465104/deerhunter-halcyon-digest-cover-art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/4211206a959256decbf4b5f1c025446c/5029430/pink-floyd-a-saucerful-of-secrets-Cover-Art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/335b20444242f0faf07dfa2623e02acd/6431114/bill-evans-and-jim-hall-undercurrent-Cover-Art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/34923ea08f95da21fff69062249f147d/2259766/miles-davis-bitches-brew-Cover-Art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/5512598b11b2f584e67a6f422f8057f5/10377954/nick-drake-pink-moon-cover-art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/e198352046897b40ab4bb8a1e262e451/9700507/gary-wilson-you-think-you-really-know-me-cover-art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/988409e7e8d00981592c3873066a5b4a/10181472/glenn-branca-the-ascension-Cover-Art.png"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/a8b7b3aa5d8f110bb9f7ebf1d8dd5e24/2505909/phish-rift-Cover-Art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/6b2ac10a59ccbb64c8e9094614df18d5/8060277/frank-ocean-channel-orange-Cover-Art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/b95e4b4325ce299ef3fc72cf7f71a0c5/9687885/miles-davis-in-a-silent-way-Cover-Art.png"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/37016daa708433c0b788465e97fd2cd4/5867629/kauan-sorni-nai-cover-art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/52bc3bdda8e56199098feb4ac9f5bb7a/2082872/angels-of-light-we-are-him-Cover-Art.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+              <div>
                 <img
                   src="https://e.snmc.io/i/600/w/be892b40e082b8ae9134ed44a190268a/1884639/robert-ashley-automatic-writing-Cover-Art.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://e.snmc.io/i/600/w/e198352046897b40ab4bb8a1e262e451/9700507/gary-wilson-you-think-you-really-know-me-cover-art.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://e.snmc.io/i/600/w/988409e7e8d00981592c3873066a5b4a/10181472/glenn-branca-the-ascension-Cover-Art.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://e.snmc.io/i/600/w/a8b7b3aa5d8f110bb9f7ebf1d8dd5e24/2505909/phish-rift-Cover-Art.jpg"
                   alt=""
                 />
               </div>
@@ -592,10 +707,10 @@
     </div>
     <footer class="text-white bg-dark">
       <ul>
-        <li>Some Information</li>
-        <li>Link 1</li>
-        <li>Link 2</li>
-        <li>Link 3</li>
+        <li><a href="#">Slothify Inc. All Rights Reserved</a></li>
+        <li><a href="#">Follow us on HeadBook</a></li>
+        <li><a href="#">Watch us on YourToob</a></li>
+        <li><a href="#">Subscribe at Threestagram</a></li>
         <li></li>
       </ul>
     </footer>
@@ -610,6 +725,9 @@
       crossorigin="anonymous"
     ></script>
     <script>
+        let table = document.querySelector("#songlist")
+        document.querySelector("#showButton").addEventListener("click", (e) => {table.classList.toggle("hidden")})
+        
       let number = document.querySelectorAll(".card");
       let counter = document.querySelector("footer ul li:last-child");
       let pics = document.querySelectorAll("#mixday div");

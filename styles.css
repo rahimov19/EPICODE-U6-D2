@@ -11,6 +11,7 @@
   position: sticky;
   top: 0;
   bottom: 0;
+  margin: 0;
 }
 #navbar1 {
   position: sticky;
@@ -19,9 +20,11 @@
   width: 50px;
   border-radius: 50%;
 }
+
 h1 {
   text-align: center;
   margin-block: 1em;
+  font-weight: 700;
 }
 h2 {
   margin-bottom: 1em;
@@ -35,7 +38,8 @@ h2 {
 }
 
 .card {
-  height: 32em;
+  height: auto;
+  min-height: 35em;
 }
 .card-body {
   display: flex;
@@ -43,7 +47,8 @@ h2 {
   justify-content: space-between;
 }
 body {
-  background-color: rgb(163, 146, 146);
+  background-color: rgb(26, 24, 31);
+  color: aliceblue;
 }
 footer ul {
   display: flex;
@@ -57,6 +62,10 @@ footer li {
 }
 footer {
   padding-block: 1em;
+  width: 99vw;
+  position: relative;
+  right: 1%;
+  border: 1px solid rgba(0, 77, 13, 0.5);
 }
 
 #mixday img {
@@ -64,4 +73,106 @@ footer {
 }
 #page {
   margin-inline: auto;
+}
+#slothnav {
+  width: 30px;
+  border-radius: 50%;
+  padding-left: 0.1em;
+}
+.navbar-brand {
+  text-align: start;
+}
+#leftside {
+  background-image: url("https://trome.com/resizer/Uhc3bpxN7LWs8u5N5KqLPx5Oau8=/1200x800/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/ZRXDGQRUTBF2BNBD257ANEQUQA.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  min-height: 30em;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden {
+  display: none;
+}
+#media {
+  display: flex;
+  justify-content: space-between;
+}
+#coverday {
+  color: whitesmoke;
+  font-size: 300%;
+  text-align: center;
+  background-color: rgba(0, 22, 3, 0.4);
+  padding: 0.5em;
+  text-shadow: 1px 1px 1px rgba(0, 77, 13, 0.5);
+}
+#albumday {
+  background-color: rgba(240, 255, 255, 0.063);
+  padding: 2em;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+#navdiv {
+  padding-left: 0;
+}
+#navbar a {
+  font-size: 1.2em;
+}
+#navbar1 a:nth-child(1) {
+  font-size: 1.5em;
+}
+@media screen and (max-width: 990px) {
+  #navbar,
+  #navbar1,
+  #navbar2,
+  #navbar3 {
+    display: flex;
+    flex-direction: row;
+  }
+  #navbar,
+  #navbar1 {
+    width: 100vw;
+    height: 3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    z-index: 1;
+  }
+  #navbar1 {
+    position: sticky;
+    height: 5em;
+  }
+  h1 {
+    margin-top: 3em;
+    font-size: 200%;
+    text-align: center;
+  }
+  #coverday {
+    font-size: 2em;
+  }
+  #media {
+    display: flex;
+    flex-direction: column;
+    margin-block: 1em;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #navbar a {
+    font-size: 1em;
+  }
+  #navbar a:first-child {
+    font-size: 1em;
+  }
+  footer ul {
+    justify-content: space-between;
+    font-size: 0.7em;
+  }
+  #slothnav {
+    width: 25px;
+  }
 }
