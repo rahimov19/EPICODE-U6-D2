@@ -22,10 +22,10 @@
             id="navbar1"
             class="navbar navbar-expand navbar-light bg-dark"
           >
-            <a class="navbar-brand text-white" href="#">Slothify  <img
+            <a class="navbar-brand text-white" href="#">  <img
                 id="slothnav"
                 src="https://www.rainforest-alliance.org/wp-content/uploads/2021/06/three-toed-sloth-teaser-1.jpg.optimal.jpg"
-              /></a>
+              />Slothify</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -85,16 +85,16 @@
             <a class="btn btn-dark btn-lg mt-3" href="#" role="button">Learn more</a>
           </div>
           <div id="albumday" class="row mb-5">
-            <div id="leftside" class="col-xl-7 col-lg-6 col-md-5 col-sm 4 col-12"> <h2 id="coverday" class="col-9">Album <br>of the day</h2></div>
-            <div class="col-xl-5 col-lg-6 col-md-7 col-sm-8 col-12 mt-md-0 mt-3">
+            <div id="leftside" class="col-xl-6 col-lg-5 col-md-12 col-sm-12 mb-sm-3 mb-md-3 col-12"> <h2 id="coverday" class="col-9">Album <br>of the day</h2></div>
+            <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 col-12 mt-md-0 mt-3">
                 <h3>No Need to Argue</h3>
                 <h4>The Cranberries</h4>
                 <h4>Duration: <b>50:30</b></h4>
                 <h4>Genre: Alternative Rock</h4>
                 <div class="media d-flex" id="media">
-                    <h5 class="align-self-center">The Cranberries - Zombie</h5>
-                    <audio controls src="assets/zombie.mp3"></audio>
-                </div>
+                  <div class="row">  <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 mb-3"><h5 class="align-self-center">The Cranberries - Zombie</h5></div>
+                    <div class="col-xl-4 col-lg-12 mt-sm-2 mt-lg-0 col-md-12 col-sm-12 col-12"><audio controls src="assets/zombie.mp3"></audio></div>
+                </div></div>
                 <button class="btn btn-dark mb-2" type="button" id="showButton">Show all songs</button>
 <div id="songlist" class="hidden">
                 <table class="table table-striped table-dark table-hover table-sm ">
@@ -199,7 +199,7 @@
                         </tr>
                     </tbody>
                   </table>
-                  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modal">Add Track</button>
+                  <button type="button" id="addtrack" class="btn btn-dark" data-toggle="modal" data-target="#modal">Add Track</button>
             </div></div>
 
           </div>
@@ -774,9 +774,9 @@
             </button>
           </div>
           <div class="modal-body"><div class="row">
-          <div class="col-6"> Number of Song<input type="text" name="Number" id="modalNumber"> </div> 
+          <div class="col-6"> Number of Song<input type="number" name="Number" disabled id="modalNumber"> </div> 
          <div class="col-6">Duration of song <input type="text" name="duration" id="modalDuration"></div>
-          <div class="col-12 mt-3"> Name of Song<input type="text" class="ml-3" name="Name" id="modalName"></div> </div>
+          <div class="col-12 mt-3 ml-5"> Name of Song<input type="text" class="ml-3" name="Name" id="modalName"></div> </div>
 
           </div>
           <div class="modal-footer">
@@ -806,21 +806,26 @@
       let pics = document.querySelectorAll("#mixday div");
       counter.innerText =
         "Total Number of Albums on Slothify: " + (number.length + pics.length);
+        let trackNumber = document.querySelector("#modalNumber");
+  let numberOfTrack = document.querySelectorAll("tr")
+
+        trackNumber.value = numberOfTrack.length
 
 let addTrack = function () {
-  let trackName = document.querySelector("#modalName").value;
-  let trackDuration = document.querySelector("#modalDuration").value;
-  let trackNumber = document.querySelector("#modalNumber").value;
+  let trackName = document.querySelector("#modalName");
+  let trackDuration = document.querySelector("#modalDuration");
+  let trackNumber = document.querySelector("#modalNumber");
+  let numberOfTrack = document.querySelectorAll("tr")
 let list = document.querySelector("#tbody")
 let addTr = document.createElement("tr")
 list.appendChild(addTr)
 let addTh = document.createElement("th")
 addTh.scope = "row"
-addTh.innerText = trackNumber
+addTh.innerText = trackNumber.value
 let addTdName = document.createElement("td")
-addTdName.innerText = trackName
+addTdName.innerText = trackName.value
 let addTdDuration = document.createElement("td")
-addTdDuration.innerText = trackDuration
+addTdDuration.innerText = trackDuration.value
 let addButton = document.createElement("button")
 addButton.classList.add ("btn", "btn-danger", "p-2", "delete")
 addButton.addEventListener("click", handleClick)
@@ -830,14 +835,16 @@ addTr.appendChild(addTdName)
 addTr.appendChild(addTdDuration)
 addTr.appendChild(addButton)
 
-trackName = "";
-trackDuration = "";
-trackNumber = "";
-
+trackName.value = "";
+trackDuration.value = "";
+// trackNumber.value = "";
+alert("Song has been successfully added to your tracklist")
+trackNumber.value++
 }
 
         let handleClick = function handleClick(event) {
     event.currentTarget.parentNode.remove();
+    trackNumber.value--
   }
         
     </script>

@@ -16,6 +16,9 @@
 #navbar1 {
   position: sticky;
 }
+#navbar2 {
+  margin-right: auto;
+}
 #sloth {
   width: 50px;
   border-radius: 50%;
@@ -75,9 +78,10 @@ footer {
   margin-inline: auto;
 }
 #slothnav {
-  width: 30px;
+  width: 50px;
   border-radius: 50%;
   padding-left: 0.1em;
+  margin-right: 0.4em;
 }
 .navbar-brand {
   text-align: start;
@@ -208,7 +212,9 @@ footer a {
   background-color: transparent;
   border: 2.5px dotted rgb(41, 0, 0);
 }
-
+audio {
+  width: 100px;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -230,9 +236,39 @@ footer a {
   width: 50px;
   border-radius: 50%;
 }
+tr:hover .delete {
+  opacity: 1;
+  transition: ease-in 0.3s;
+}
+
 .delete {
   padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+  right: 1em;
+  transform: translateY(5px);
+  height: 1.7em;
+  line-height: 8px;
 }
 #modal {
   color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+#addtrack {
+  transition: 1s;
+  width: 10em;
+}
+#addtrack:hover {
+  box-shadow: 4px 4px 7px black;
+  transition: 1s;
 }
